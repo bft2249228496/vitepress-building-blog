@@ -1,0 +1,8 @@
+import{_ as s,o as a,c as n,O as e}from"./chunks/framework.5e191eb6.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{"title":["hexo笔记"],"date":"2023-05-14T02:30:45.000Z","tags":null},"headers":[],"relativePath":"column/learning/hexo.md","filePath":"column/learning/hexo.md"}'),l={name:"column/learning/hexo.md"},o=e(`<h2 id="hexo的常用命令" tabindex="-1">hexo的常用命令 <a class="header-anchor" href="#hexo的常用命令" aria-label="Permalink to &quot;hexo的常用命令&quot;">​</a></h2><div class="language-js"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#676E95;font-style:italic;">// 运行hexo项目服务的命令</span></span>
+<span class="line"><span style="color:#A6ACCD;">hexo server</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 新建文章</span></span>
+<span class="line"><span style="color:#A6ACCD;">hexo </span><span style="color:#89DDFF;">new</span><span style="color:#A6ACCD;"> [文章名]</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">// 一键部署的三个命令</span></span>
+<span class="line"><span style="color:#A6ACCD;">hexo clean </span><span style="color:#676E95;font-style:italic;">//清除已生成的静态文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">hexo g </span><span style="color:#676E95;font-style:italic;">//生成静态文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">hexo d </span><span style="color:#676E95;font-style:italic;">//部署到远程服务器</span></span></code></pre></div>`,2),t=[o];function p(c,i,r,h,_,d){return a(),n("div",null,t)}const C=s(l,[["render",p]]);export{x as __pageData,C as default};
