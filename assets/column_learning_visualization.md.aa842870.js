@@ -620,4 +620,58 @@ import{_ as s,o as n,c as a,O as l}from"./chunks/framework.5e191eb6.js";const i=
 <span class="line"><span style="color:#A6ACCD;">      </span><span style="color:#F07178;">bottom</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> </span><span style="color:#F78C6C;">4</span><span style="color:#89DDFF;">,</span></span>
 <span class="line"><span style="color:#A6ACCD;">    </span><span style="color:#89DDFF;">},</span></span>
 <span class="line"><span style="color:#A6ACCD;">  ]</span><span style="color:#89DDFF;">,</span></span>
-<span class="line"><span style="color:#89DDFF;">};</span></span></code></pre></div><h2 id="echarts-绘制的图像需要根据条件及时变化-数据改变-图像无法改变" tabindex="-1">echarts 绘制的图像需要根据条件及时变化,数据改变,图像无法改变 <a class="header-anchor" href="#echarts-绘制的图像需要根据条件及时变化-数据改变-图像无法改变" aria-label="Permalink to &quot;echarts 绘制的图像需要根据条件及时变化,数据改变,图像无法改变&quot;">​</a></h2><p>解决方法是初始化 echarts 实例的方法写到通过接口获取数据的方法里,每次在初始化 echarts 实例的方法里每次先调用 echarts.dispose(state.refDom)销毁再创建</p>`,34),e=[o];function t(c,D,F,r,y,C){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{i as __pageData,u as default};
+<span class="line"><span style="color:#89DDFF;">};</span></span></code></pre></div><h2 id="echarts-绘制的图像需要根据条件及时变化-数据改变-图像无法改变" tabindex="-1">echarts 绘制的图像需要根据条件及时变化,数据改变,图像无法改变 <a class="header-anchor" href="#echarts-绘制的图像需要根据条件及时变化-数据改变-图像无法改变" aria-label="Permalink to &quot;echarts 绘制的图像需要根据条件及时变化,数据改变,图像无法改变&quot;">​</a></h2><p>解决方法是初始化 echarts 实例的方法写到通过接口获取数据的方法里,每次在初始化 echarts 实例的方法里每次先调用 echarts.dispose(state.refDom)销毁再创建</p><h2 id="echarts-图像自定义悬浮窗样式" tabindex="-1">echarts 图像自定义悬浮窗样式 <a class="header-anchor" href="#echarts-图像自定义悬浮窗样式" aria-label="Permalink to &quot;echarts 图像自定义悬浮窗样式&quot;">​</a></h2><p>先在常规页面写好悬浮窗的纯 html 和 style 样式,在通过 tooltip 的 formatter 属性插入进去</p><div class="language-js"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#FFCB6B;">tooltip</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#FFCB6B;">trigger</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">axis</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#FFCB6B;">hideDelay</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">1000</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#FFCB6B;">enterable</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#FF9CAC;">true</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#FFCB6B;">axisPointer</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#FFCB6B;">type</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">shadow</span><span style="color:#89DDFF;">&#39;</span><span style="color:#89DDFF;">,</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#89DDFF;">},</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#FFCB6B;">formatter</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#C792EA;">function</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;font-style:italic;">params</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#FFCB6B;">any</span><span style="color:#89DDFF;">)</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">{</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#A6ACCD;">console</span><span style="color:#89DDFF;">.</span><span style="color:#82AAFF;">log</span><span style="color:#F07178;">(</span><span style="color:#A6ACCD;">params</span><span style="color:#89DDFF;">,</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">&#39;</span><span style="color:#C3E88D;">params+++</span><span style="color:#89DDFF;">&#39;</span><span style="color:#F07178;">)</span></span>
+<span class="line"><span style="color:#F07178;">            </span><span style="color:#89DDFF;font-style:italic;">return</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">\`</span></span>
+<span class="line"><span style="color:#C3E88D;">              &lt;div style=&quot;width: 300px;</span></span>
+<span class="line"><span style="color:#C3E88D;">        padding: 20px 0;&quot;&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;color: #333;</span></span>
+<span class="line"><span style="color:#C3E88D;">        font-weight: bold;</span></span>
+<span class="line"><span style="color:#C3E88D;">        font-size: 16px;</span></span>
+<span class="line"><span style="color:#C3E88D;">        padding: 0 20px 20px;&quot;&gt;GD2023062500001前封门组件&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">          &lt;div style=&quot;background: #F2F2F2;</span></span>
+<span class="line"><span style="color:#C3E88D;">    height: 1px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    width: 100%;&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot; font-size: 14px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    font-weight: 400;</span></span>
+<span class="line"><span style="color:#C3E88D;">    color: #666666;</span></span>
+<span class="line"><span style="color:#C3E88D;">    padding: 20px;&quot;&gt;计划结束时间:2023-07-07 17:00&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;background: #F2F2F2;</span></span>
+<span class="line"><span style="color:#C3E88D;">    height: 1px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    width: 100%;&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot; font-size: 14px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    font-weight: 400;</span></span>
+<span class="line"><span style="color:#C3E88D;">    color: #666666;</span></span>
+<span class="line"><span style="color:#C3E88D;">    padding: 20px;&quot;&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">        &lt;div&gt;计划数量:5000&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">        &lt;div&gt;已生产数量:4790&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;background: #F2F2F2;</span></span>
+<span class="line"><span style="color:#C3E88D;">    height: 1px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    width: 100%;&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;font-size: 14px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    font-weight: 400;</span></span>
+<span class="line"><span style="color:#C3E88D;">    color: #666666;</span></span>
+<span class="line"><span style="color:#C3E88D;">    padding: 20px;&quot;&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">        &lt;div&gt;工单进度:95.80%&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">        &lt;div&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;background: #F2F2F2;</span></span>
+<span class="line"><span style="color:#C3E88D;">    height: 1px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    width: 100%;&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;div style=&quot;font-size: 13px;</span></span>
+<span class="line"><span style="color:#C3E88D;">    font-weight: 400;</span></span>
+<span class="line"><span style="color:#C3E88D;">    color: #1990FF;</span></span>
+<span class="line"><span style="color:#C3E88D;">    padding-left: 20px;padding-top: 20px; cursor: pointer;&quot;&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">        查看更多&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">      &lt;/div&gt;</span></span>
+<span class="line"><span style="color:#C3E88D;">    &lt;/div&gt;</span><span style="color:#89DDFF;">\`</span></span>
+<span class="line"><span style="color:#F07178;">          </span><span style="color:#89DDFF;">},</span></span>
+<span class="line"><span style="color:#F07178;">        </span><span style="color:#89DDFF;">},</span></span></code></pre></div>`,37),e=[o];function t(c,D,F,r,y,C){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{i as __pageData,u as default};
