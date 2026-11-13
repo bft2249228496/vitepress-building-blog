@@ -1,0 +1,15 @@
+import{H as e,ht as t,nt as n,tt as r}from"./chunks/framework.Dd7A_WMg.js";var i=JSON.parse(`{"title":"Hexo笔记","description":"","frontmatter":{"title":"Hexo笔记","date":"2023-05-14T02:30:45.000Z","tags":null},"headers":[],"relativePath":"column/learning/hexo.md","filePath":"column/learning/hexo.md","lastUpdated":1794276291000}`),a={name:`column/learning/hexo.md`};function o(e,i,a,o,s,c){return t(),r(`div`,null,[...i[0]||=[n(`<h2 id="hexo-常用核心命令" tabindex="-1">Hexo 常用核心命令 <a class="header-anchor" href="#hexo-常用核心命令" aria-label="Permalink to “Hexo 常用核心命令”">​</a></h2><div class="language-bash"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-light:#62687b;--shiki-dark:#818e99;"># 启动本地预览服务 (默认端口 4000)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> server</span></span>
+<span class="line"><span style="--shiki-light:#62687b;--shiki-dark:#818e99;"># 简写形式</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> s</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#62687b;--shiki-dark:#818e99;"># 新建文章</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> new</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &quot;文章标题&quot;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#62687b;--shiki-dark:#818e99;"># 一键清理、重新生成并部署的常用三部曲</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> clean</span><span style="--shiki-light:#62687b;--shiki-dark:#818e99;">  # 清理缓存与已生成的静态文件 public</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> g</span><span style="--shiki-light:#62687b;--shiki-dark:#818e99;">      # 生成静态网页文件 (generate)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> d</span><span style="--shiki-light:#62687b;--shiki-dark:#818e99;">      # 部署到远程分支 (deploy)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#62687b;--shiki-dark:#818e99;"># 组合一键生成并部署</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">hexo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> g</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> -d</span></span></code></pre></div>`,2)]])}var s=e(a,[[`render`,o]]);export{i as __pageData,s as default};
